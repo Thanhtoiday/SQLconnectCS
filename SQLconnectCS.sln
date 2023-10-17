@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLconnectCS", "SQLconnectCS.csproj", "{2FAE71AB-FAF4-43B4-833B-D5EEA372826E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FAE71AB-FAF4-43B4-833B-D5EEA372826E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FAE71AB-FAF4-43B4-833B-D5EEA372826E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FAE71AB-FAF4-43B4-833B-D5EEA372826E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FAE71AB-FAF4-43B4-833B-D5EEA372826E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {330B24F4-3B85-491D-9164-D79296B605AC}
+	EndGlobalSection
+EndGlobal
