@@ -48,7 +48,7 @@ namespace SQLconnectCS
                     if(flag != 0)
                     {
                         MessageBox.Show("kết nối thành công");
-
+                        MessageBox.Show("Push thành công");
                     }
                     else
                     {
