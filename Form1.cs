@@ -65,7 +65,17 @@ namespace SQLconnectCS
 
 
             }
+
+        private void tk_txt_TextChanged(object sender, EventArgs e)
+        {
+
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
 
 
     }
