@@ -54,7 +54,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            
             // 
             // label1
             // 
@@ -80,7 +80,7 @@
             this.tk_txt.Name = "tk_txt";
             this.tk_txt.Size = new System.Drawing.Size(128, 22);
             this.tk_txt.TabIndex = 4;
-            this.tk_txt.TextChanged += new System.EventHandler(this.tk_txt_TextChanged);
+           
             // 
             // mk_txt
             // 
