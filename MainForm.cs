@@ -52,5 +52,19 @@ namespace SQLconnectCS
             //do du lieu
             dataGridView1.DataSource = getAlluser().Tables[0];
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = e.RowIndex;
+            id_txt.Text = dataGridView1.Rows[row].Cells[0].Value.ToString();
+            msv_txt.Text = dataGridView1.Rows[row].Cells[1].Value.ToString();
+            name_txt.Text = dataGridView1.Rows[row].Cells[2].Value.ToString();
+            Khoa_txt.Text = dataGridView1.Rows[row].Cells[3].Value.ToString();
+        
+    }
     }
 }
