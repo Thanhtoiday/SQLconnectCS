@@ -44,21 +44,18 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(604, 452);
+            this.button1.Location = new System.Drawing.Point(750, 403);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // refesh_btn
             // 
-            this.refesh_btn.Location = new System.Drawing.Point(47, 30);
+            this.refesh_btn.Location = new System.Drawing.Point(12, 12);
             this.refesh_btn.Name = "refesh_btn";
-            this.refesh_btn.Size = new System.Drawing.Size(209, 23);
-            this.refesh_btn.TabIndex = 1;
-            this.refesh_btn.Text = "Danh sách sinh viên";
-            this.refesh_btn.UseVisualStyleBackColor = true;
+            this.refesh_btn.Size = new System.Drawing.Size(75, 23);
+            this.refesh_btn.TabIndex = 13;
             this.refesh_btn.Click += new System.EventHandler(this.refesh_btn_Click);
             // 
             // id
@@ -72,8 +69,7 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(147, 134);
+            this.label2.Location = new System.Drawing.Point(144, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 3;
@@ -81,8 +77,7 @@
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(440, 134);
+            this.label3.Location = new System.Drawing.Point(443, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 16);
             this.label3.TabIndex = 4;
@@ -128,20 +123,19 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(97, 232);
+            this.dataGridView1.Location = new System.Drawing.Point(328, 196);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(668, 157);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 513);
+            this.ClientSize = new System.Drawing.Size(1171, 495);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.msv_txt);
             this.Controls.Add(this.Khoa_txt);
@@ -155,7 +149,6 @@
             this.Controls.Add(this.button1);
             this.Name = "MainForm";
             this.Text = "MainForm";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -8,6 +8,6 @@ namespace SQLconnectCS
 {
     internal class StringConnect
     {
-        public static string StringConn = @"Data Source=DESKTOP-PV3OCED\SQLEXPRESS; Database = QLySV; user id = sa; password = 123";
+        public static string StringConn = @"Data Source=DESKTOP-PV3OCED\SQLEXPRESS; Database = QLySV;integrated security =true ";
     }
 }

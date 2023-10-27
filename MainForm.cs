@@ -18,44 +18,39 @@ namespace SQLconnectCS
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-        //lay du lieu do vao datagridview bang dataset
-        DataSet getAlluser()//muc dich lay du lieu
+        DataSet getAllUser()
+
         {
             try
             {
                 DataSet data = new DataSet();
                 string sql = "select * from SV";
-                using (SqlConnection conn = new SqlConnection(StringConnect.StringConn))
+
+                using (SqlConnection conn  = new SqlConnection(StringConnect.StringConn))
                 {
                     conn.Open();
+
 
                     SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                     adapter.Fill(data);
                     conn.Close();
                 }
                 return data;
-            }catch(Exception ex)
-            {
-                MessageBox.Show("Khong the truy cap");
-            }
-            return null;
-        }
-        //show du lieu trong bang SV
-        private void refesh_btn_Click(object sender, EventArgs e)
-        {
-            //setup do rong tu dong
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            //do du lieu
-            dataGridView1.DataSource = getAlluser().Tables[0];
-        }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            }catch (Exception ex)
+            {
+                MessageBox.Show("Không thể truy cập ");
+            }return null;
         }
+        
+      
+
+      
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -66,5 +61,11 @@ namespace SQLconnectCS
             Khoa_txt.Text = dataGridView1.Rows[row].Cells[3].Value.ToString();
         
     }
+
+        private void refesh_btn_Click(object sender, EventArgs e)
+        {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.DataSource = getAllUser().Tables[0];
+        }
     }
 }
