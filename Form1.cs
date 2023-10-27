@@ -48,11 +48,7 @@ namespace SQLconnectCS
                     if(flag != 0)
                     {
                         MessageBox.Show("kết nối thành công");
-                        
-                        MainForm mf = new MainForm();
-                        mf.ShowDialog();
-                        this.Hide();
-
+                        MessageBox.Show("Push thành công");
                     }
                     else
                     {
@@ -69,17 +65,17 @@ namespace SQLconnectCS
 
 
             }
+            // getAlluser tương đương select * from
+            //lay dữ liệu từ sql đổ vào datagridview 
+
 
         private void tk_txt_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            }
         }
-    }
 
 
     }
